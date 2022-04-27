@@ -5,5 +5,11 @@
    "private": "true",
 	"workspaces": [
 		"packages/*"
-	]
+	],
+    "scripts": {
+        "dev:server": "yarn workspace @maxapp/server dev",
+        "dev:client": "yarn workspace @maxapp/client start",
+        "build:client": "yarn workspace @maxapp/client build",
+        "start": "yarn workspace @maxapp/server start"
+    }
 }
